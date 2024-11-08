@@ -2,9 +2,9 @@ import random
 import json
 from datetime import datetime
 from faker import Faker
-from generators.helpers import get_skills_for_role
-from config.load_config import load_config
-CONFIG = load_config()
+from utils.get_skills_for_role import get_skills_for_role
+from config.config import CONFIG
+from config.other_config import OTHER_CONFIG
 fake = Faker()
 
 class CandidateGenerator:
@@ -45,11 +45,11 @@ class CandidateGenerator:
         # Generate location preference
         location_type = random.choice(['city', 'remote'])
         if location_type == 'city':
-            location = random.choice(CONFIG['locations']['cities'])
+            location = random.choice(OTHER_CONFIG['locations']['cities'])
         else:
-            location = random.choice(CONFIG['locations']['remote_policies'])
+            location = random.choice(OTHER_CONFIG['locations']['remote_policies'])
 
-        status = random.choice(CONFIG['candidate_status_keywords'])
+        status = random.choice(OTHER_CONFIG['candidate_status_keywords'])
 
         return {
             'id': id,

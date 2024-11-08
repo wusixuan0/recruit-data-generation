@@ -1,7 +1,5 @@
 import random
-from config.load_config import load_config
-
-CONFIG = load_config()
+from config.config import CONFIG
 
 def get_skills_for_role(role_category, num_skills=5):
     """Get relevant skills based on role category and its required skillsets"""

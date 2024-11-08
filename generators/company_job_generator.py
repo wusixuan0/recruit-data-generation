@@ -2,9 +2,9 @@ import json
 import random
 from datetime import datetime, timedelta
 from faker import Faker
-from generators.helpers import get_skills_for_role
-from config.load_config import load_config
-CONFIG = load_config()
+from utils.get_skills_for_role import get_skills_for_role
+from config.config import CONFIG
+from config.other_config import COMPANY_CONFIG, OTHER_CONFIG
 fake = Faker()
 
 class CompanyJobDataGenerator:
@@ -13,56 +13,58 @@ class CompanyJobDataGenerator:
 
     def generate_department(self, id):
         """Generate a company department using both predefined and dynamic names"""
-        use_predefined = random.random() < 0.3  # 30% predefined, 70% dynamic
+        use_predefined = random.random() < 0.1
 
-        if use_predefined and CONFIG.get('company_departments'):
+        if use_predefined and COMPANY_CONFIG.get('company_departments'):
             # Use predefined department name
-            dept_name = random.choice(list(CONFIG['company_departments'].keys()))
-            dept_info = CONFIG['company_departments'][dept_name]
+            dept_name = random.choice(list(COMPANY_CONFIG['company_departments'].keys()))
+            dept_info = COMPANY_CONFIG['company_departments'][dept_name]
             dept_type = dept_info['department_type']
+            dept_specialization = dept_info['dept_specialization']
         else:
             # Generate dynamic department name
             dept_type = random.choice(list(CONFIG['department_types'].keys()))
-            company_category = random.choice(list(CONFIG['companies'].keys()))
-            company = random.choice(CONFIG['companies'][company_category])
-            dept_specialization = random.choice(CONFIG['department_types'][dept_type])
+            
+            use_predefined_companies = random.random() < 0.5
+            
+            if use_predefined_companies:
+                industry = random.choice(list(COMPANY_CONFIG['companies'].keys()))
+                company = random.choice(COMPANY_CONFIG['companies'][industry])
+            else:
+                company = fake.company()
+
+            department_types = random.choice(list(CONFIG['department_types'].keys()))
+            dept_specialization = random.choice(CONFIG['department_types'][department_types])
             dept_name = f"{dept_specialization} Team, {company}"
 
         department = {
             'id': id,
             'company_department_name': dept_name,
             'department_type': dept_type,
-            'location': random.choice(CONFIG['locations']['cities']),
+            'dept_specialization': dept_specialization,
+            'location': random.choice(OTHER_CONFIG['locations']['cities']),
             'department_size': random.randint(5, 50),
         }
 
         # Add role mapping based on department type
-        if dept_type == 'Technology':
-            department['roles'] = CONFIG['job_roles']['Data Science']['titles'] + CONFIG['job_roles']['Software Engineering']['titles']
-        elif dept_type == 'Finance':
-            department['roles'] = CONFIG['job_roles']['Business Analytics']['titles']
-        elif dept_type == 'Marketing':
-            department['roles'] = CONFIG['job_roles']['Business Analytics']['titles']
+        department['roles'] = CONFIG['job_roles'][dept_specialization]['titles']
 
         return department
 
     def generate_job(self, id, department):
         """Generate a job position aligned with department"""
         # Use department info directly instead of looking up
-        role = random.choice(department['roles'])
+        dept_specialization = department['dept_specialization']
+        
+        if 'roles' in department:
+            role = random.choice(department['roles'])
+        else:
+            role = random.choice(CONFIG['job_roles'][dept_specialization]['titles'])
 
-        # Find role category
-        role_category = next(
-            category
-            for category, info in CONFIG['job_roles'].items()
-            if role in info['titles']
-        )
-
-        required_skills = get_skills_for_role(role_category)
+        required_skills = get_skills_for_role(dept_specialization)
         yoe_min = random.randint(0, 5)
 
-        status = random.choice(['Draft', 'Posted', 'Active'])
-
+        status = random.choice(['Active', 'Closed', 'Filled'])
 
         return {
             'id': id,
@@ -72,7 +74,7 @@ class CompanyJobDataGenerator:
             'minimal_years_of_experience': yoe_min,
             'preferred_years_of_experience': yoe_min + random.randint(2, 5),
             'location': department['location'],  # Use department location
-            'remote_policy': random.choice(CONFIG['locations']['remote_policies']),
+            'remote_policy': random.choice(OTHER_CONFIG['locations']['remote_policies']),
             'status': status,
             'posting_date': (self.current_date - timedelta(days=random.randint(1, 90))).isoformat()
         }

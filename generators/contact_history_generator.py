@@ -1,8 +1,7 @@
 import random
 from datetime import datetime, timedelta
 from faker import Faker
-from config.load_config import load_config
-CONFIG = load_config()
+from config.other_config import OTHER_CONFIG
 fake = Faker()
 
 class ContactDataGenerator:
@@ -22,7 +21,7 @@ class ContactDataGenerator:
             num_contacts = 1
         for _ in range(num_contacts):
             contact_date = self.current_date - timedelta(days=random.randint(1, 180))
-            interest_level = random.choice(CONFIG['interest_levels'][candidate_status])
+            interest_level = random.choice(OTHER_CONFIG['interest_levels'][candidate_status])
             follow_up_needed = random.choice([True, False]) if candidate_status == "Active" else False
 
             history.append({
