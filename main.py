@@ -6,29 +6,23 @@ from generators.apply_history_generator import ApplyHistoryGenerator
 from utils.custom_print import custom_print
 from utils.file_utils import save_json
 from config.config import CONFIG
-from generators.batch_data_generator import RecruiterMatchingGenerator
+from generators.batch_data_generator import RecruitingSimulator
 
 def main(args):
     if args.batch:
-        # Generate a batch of Data Analytics related data
-        generator = RecruiterMatchingGenerator()
-        analytics_batch = generator.generate_complete_dataset(
-            num_departments=2,
-            jobs_per_dept=3,
-            talent_pool_size=50
-        )
+        dataset = RecruitingSimulator().generate_dataset(number_of_months=6)
         
-        print(f"Generated:")
-        print(f"- {len(analytics_batch['departments'])} departments")
-        print(f"- {len(analytics_batch['jobs'])} jobs")
-        print(f"- {len(analytics_batch['candidates'])} candidates")
-        print(f"- {len(analytics_batch['contact_history'])} contact records")
-        print(f"- {len(analytics_batch['apply_history'])} applications")
+        print(f"Generated dataset over 6 months:")
+        print(f"Departments: {len(dataset['departments'])}")
+        print(f"Jobs: {len(dataset['jobs'])}")
+        print(f"Candidates: {len(dataset['candidates'])}")
+        print(f"Contacts: {len(dataset['contact_history'])}")
+        print(f"Applications: {len(dataset['apply_history'])}")
 
-        departments = analytics_batch['departments']
-        jobs = analytics_batch['jobs']
-        candidates = analytics_batch['candidates']
-        apply_history = analytics_batch['apply_history']
+        departments = dataset['departments']
+        jobs = dataset['jobs']
+        candidates = dataset['candidates']
+        apply_history = dataset['apply_history']
 
         print("\nExample Department:")
         custom_print(departments[0])
