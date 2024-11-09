@@ -19,6 +19,7 @@ CONFIG = {
       "dept_specialization": "Software Engineering"
     },
   },
+  "role_categories": ["Data Science", "Software Engineering", "Business Analytics"],
   # job_roles is a dictionary with keys as job categories/department specializations and values as a dictionary with titles and skillsets
   "job_roles":   {
     "Data Science":     {

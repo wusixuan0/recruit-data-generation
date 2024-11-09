@@ -5,8 +5,42 @@ from generators.contact_history_generator import ContactDataGenerator
 from generators.apply_history_generator import ApplyHistoryGenerator
 from utils.custom_print import custom_print
 from utils.file_utils import save_json
+from config.config import CONFIG
+from generators.batch_data_generator import RecruiterMatchingGenerator
 
 def main(args):
+    if args.batch:
+        # Generate a batch of Data Analytics related data
+        generator = RecruiterMatchingGenerator()
+        analytics_batch = generator.generate_complete_dataset(
+            num_departments=2,
+            jobs_per_dept=3,
+            talent_pool_size=50
+        )
+        
+        print(f"Generated:")
+        print(f"- {len(analytics_batch['departments'])} departments")
+        print(f"- {len(analytics_batch['jobs'])} jobs")
+        print(f"- {len(analytics_batch['candidates'])} candidates")
+        print(f"- {len(analytics_batch['contact_history'])} contact records")
+        print(f"- {len(analytics_batch['apply_history'])} applications")
+
+        departments = analytics_batch['departments']
+        jobs = analytics_batch['jobs']
+        candidates = analytics_batch['candidates']
+        apply_history = analytics_batch['apply_history']
+
+        print("\nExample Department:")
+        custom_print(departments[0])
+
+        print("\nExample Job:")
+        custom_print(jobs[0])
+
+        print("\nExample Candidate:")
+        custom_print(candidates[0])
+
+        print("\nExample Application:")
+        custom_print(apply_history[0])
     if args.print:
         custom_print()
         print()
@@ -27,14 +61,22 @@ def main(args):
         save_json(contact_history, "contact_history.json")
 
     if args.generate_apply_history:
-        candidates = CandidateGenerator().generate_data(num_candidates=1)
-        company_data = CompanyJobDataGenerator().generate_data(num_departments=2, num_jobs=2)
-        jobs = company_data['jobs']
-        apply_history = ApplyHistoryGenerator().generate_apply_history(candidates, jobs, num_applications=args.num_applications)
-        save_json(apply_history, "apply_history.json")
+        # Example Batch: "Data Analytics" Jobs & Candidates
+        # 1. Generate 20 Data Analytics jobs
+        # 2. Generate 50 candidates in Data Analytics
+        # 3. Generate apply_history within this batch
+        # (role_category in candidate == dept_specialization in job)
+        for role_category in CONFIG['role_categories']:
+            candidates = CandidateGenerator().generate_data(num_candidates=50, role_category=role_category)
+            company_data = CompanyJobDataGenerator().generate_data(num_departments=10, num_jobs=20, dept_specialization=role_category)
+            jobs = company_data['jobs']
+
+            apply_history = ApplyHistoryGenerator().generate_apply_history(candidates, jobs, num_applications=args.num_applications)
+            save_json(apply_history, "apply_history.json")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate data for various tables.")
+    parser.add_argument('--batch', action='store_true')
     parser.add_argument('--print', action='store_true', help="print pre-defined job data")
     parser.add_argument('--generate-candidates', action='store_true', help="Generate candidate data")
     parser.add_argument('--generate-jobs', action='store_true', help="Generate job and department data")

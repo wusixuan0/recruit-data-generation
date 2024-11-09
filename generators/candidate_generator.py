@@ -31,10 +31,11 @@ class CandidateGenerator:
             })
 
         return positions
-    def generate_candidate(self, id):
+    def generate_candidate(self, id, role_category):
         """Generate a single candidate with structured matching fields"""
-        # Select a random role category and its details
-        role_category = random.choice(list(CONFIG['job_roles'].keys()))
+        if role_category is None:
+            # Select a random role category and its details
+            role_category = random.choice(list(CONFIG['job_roles'].keys()))
         yoe = random.randint(0, 15)
         is_structured = random.random() > 0.3  # 70% clean data, 30% messy
 
@@ -66,8 +67,9 @@ class CandidateGenerator:
                 if is_structured
                 else ', '.join(skills)
             ),
+            'role_category': role_category,
             'status': status,
             'updated_at': self.current_date.isoformat()
         }
-    def generate_data(self, num_candidates=500):
-        return [self.generate_candidate(i) for i in range(num_candidates)]
+    def generate_data(self, num_candidates=500, role_category=None):
+        return [self.generate_candidate(i, role_category) for i in range(num_candidates)]
