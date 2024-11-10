@@ -35,11 +35,12 @@ def main(args):
 
         # print("\nExample Application:")
         # custom_print(apply_history[0])
-        # save_json(candidates, "candidates.json")
-        # save_json(departments, "company_departments.json")
-        # save_json(jobs, "jobs.json")
-        # save_json(contact_history, "contact_history.json")
-        # save_json(apply_history, "apply_history.json")
+        
+        save_json(candidates, "candidates.json")
+        save_json(departments, "company_departments.json")
+        save_json(jobs, "jobs.json")
+        save_json(contact_history, "contact_history.json")
+        save_json(apply_history, "apply_history.json")
     
     if args.print:
         custom_print()

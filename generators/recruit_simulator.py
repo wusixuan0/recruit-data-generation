@@ -191,6 +191,11 @@ class RecruitingSimulator:
             job = next(j for j in self.jobs if j['id'] == application['job_position_id'])
             if job['status'] == 'Closed':
                 application['status'] = random.choices(
-                    ['completed', 'rejected'],
-                    weights=[80, 20]
+                    ['rejected', 'hired'],
+                    weights=[60, 40]
                 )[0]
+                if application['status'] == 'hired':
+                    for candidate in self.candidates:
+                        if candidate['id'] == application['candidate_id']:
+                            candidate['status'] = 'Not open to interview'
+                            break
