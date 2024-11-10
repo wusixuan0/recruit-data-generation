@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from faker import Faker
 from typing import Dict, List, Any
 from config.config import CONFIG
+from config.other_config import OTHER_CONFIG
 from generators.candidate_generator import CandidateGenerator
 from generators.company_generator import CompanyDataGenerator
 from generators.job_generator import JobDataGenerator
@@ -25,8 +26,6 @@ class RecruitingSimulator:
         self.contact_history = []
         self.apply_history = []
 
-        self._generate_job_for_dept = JobDataGenerator().generate_job_for_dept
-        
         # ID counters
         self.next_contact_id = 0
         self.next_apply_id = 0
@@ -35,32 +34,37 @@ class RecruitingSimulator:
         """Generate complete recruiting dataset over specified months"""
         # 1. Initial Setup
         self._generate_initial_candidates()
-        self._generate_departments()
+        self._generate_departments_for_categories()
         self._generate_initial_jobs()
         
         # 2. Monthly Cycles
-        # for _ in range(number_of_months - 1):  # -1 because we already generated initial month
-        #     self._simulate_month()
+        for _ in range(number_of_months - 1):  # -1 because we already generated initial month
+            self._simulate_month()
         
-        # # 3. Finalize dataset
-        # self._finalize_statuses()
+        # 3. Finalize dataset
+        self._finalize_statuses()
         
         return {
             'candidates': self.candidates,
             'departments': self.departments,
             'jobs': self.jobs,
-        #     'contact_history': self.contact_history,
-        #     'apply_history': self.apply_history
+            'contact_history': self.contact_history,
+            'apply_history': self.apply_history
         }
     
-    def _generate_departments(self):
+    def _generate_departments_for_categories(self):
         for category in self.job_categories:
             self.departments.extend(CompanyDataGenerator().generate_dept_for_category(category, 15))
-      
+            
+    def _generate_department(self):
+        category = random.choice(self.job_categories)
+        self.departments.extend(CompanyDataGenerator().generate_dept_for_category(category, 1))
+
     def _generate_initial_jobs(self):
         """Generate initial job openings"""
         for department in self.departments:
-            self.jobs.extend(self._generate_job_for_dept(department, self.new_jobs_per_month[department['dept_specialization']]))
+            jobs = JobDataGenerator().generate_jobs_for_dept(department, 1)
+            self.jobs.extend(jobs)
 
     def _generate_initial_candidates(self):
         """Generate initial candidate pool"""
@@ -71,53 +75,26 @@ class RecruitingSimulator:
         """Generate specified number of candidates for a category"""
         self.candidates.extend(CandidateGenerator().generate_candidates_for_category(category, count))
     
-    def _generate_jobs_for_category(self, category: str, count: int):
-        """Generate specified number of jobs for a category"""
-        # Get departments for this category
-        category_departments = [d for d in self.departments if d['dept_specialization'] == category]
-        
-        for _ in range(count):
-            dept = random.choice(category_departments)
-            yoe_min = random.randint(0, 5)
-            
-            self.jobs.append({
-                'id': self.next_job_id,
-                'company_department_id': dept['id'],
-                'department_name': dept['company_department_name'],
-                'job_title': self._get_job_title(category),
-                'minimal_years_of_experience': yoe_min,
-                'preferred_years_of_experience': yoe_min + random.randint(2, 3),
-                'location': dept['location'],
-                'status': 'Open',
-                'posting_date': self.current_date.isoformat(),
-                'category': category
-            })
-            self.next_job_id += 1
-    
-    def _get_job_title(self, category: str) -> str:
-        """Get random job title based on category"""
-        titles = {
-            'Data Analytics': [
-                'Data Analyst', 'Business Intelligence Analyst',
-                'Data Science Analyst', 'Analytics Consultant'
-            ],
-            'Software Engineering': [
-                'Software Engineer', 'Full Stack Developer',
-                'Backend Engineer', 'Frontend Developer'
-            ]
-        }
-        return random.choice(titles[category])
-    
     def _simulate_month(self):
         """Simulate one month of recruiting activities"""
         # 1. Move to next month
         self.current_date += timedelta(days=30)
         
         # 2. Generate new data
+        self._generate_department()
+
         for category in self.job_categories:
             # Add new jobs
-            self._generate_jobs_for_category(category, self.new_jobs_per_month[category])
+            job_count = self.new_jobs_per_month[category]
             
+            new_jobs = JobDataGenerator().generate_jobs_for_category(
+                category=category,
+                departments=self.departments,
+                count=job_count,
+                current_date=self.current_date
+            )
+
+            self.jobs.extend(new_jobs)
             # Add new candidates
             self._generate_candidates_for_category(category, self.new_candidates_per_month[category])
         
@@ -135,10 +112,10 @@ class RecruitingSimulator:
             # Find matching candidates
             matching_candidates = self._find_matching_candidates(job)
             
-            # Generate outreach for 5-8 candidates
+            # reach out to candidates
             candidates_to_contact = random.sample(
                 matching_candidates,
-                min(random.randint(5, 8), len(matching_candidates))
+                min(random.randint(2, 3), len(matching_candidates))
             )
             
             # Generate contact and application history
@@ -159,51 +136,46 @@ class RecruitingSimulator:
         """Generate outreach sequence for a candidate"""
         # Initial outreach
         contact_date = datetime.fromisoformat(job['posting_date']) + timedelta(days=random.randint(1, 7))
+        candidate_status = candidate['status']
+        interest_level = random.choice(OTHER_CONFIG['interest_levels'][candidate_status])
+        follow_up_needed = random.choice([True, False]) if candidate_status == "Active" else False
         
         self.contact_history.append({
             'id': self.next_contact_id,
             'candidate_id': candidate['id'],
             'contact_date': contact_date.isoformat(),
             'contact_method': random.choice(['email', 'phone']),
-            'contact_source': 'Recruiter', # email, zendesk, and manual notes.
-            'interest_level': None,
-            'follow_up_needed': True,
+            'data_source': random.choice(["email", "zendesk", "manual notes"]),
+            'interest_level': interest_level,
+            'follow_up_needed': follow_up_needed,
             'job_id': job['id']
         })
         self.next_contact_id += 1
         
-        # Simulate response (70% response rate)
-        if random.random() < 0.7:
-            response_date = contact_date + timedelta(days=random.randint(2, 5))
-            interest_level = random.choice(['High', 'Medium', 'Low', 'Not Interested'])
-            
-            self.contact_history.append({
-                'id': self.next_contact_id,
+        # Generate application (60% for active, 20% for passive)
+        if (random.random() < 0.6 and candidate_status.lower() == "active") or (random.random() < 0.2 and candidate_status.lower() == "passive"):
+            apply_date = contact_date + timedelta(days=random.randint(1, 3))
+            status = random.choices(
+                ["successful", "rejected"],
+                weights=[20, 80]
+            )[0]
+            additional_notes = random.choices(OTHER_CONFIG["application_note"][status])
+
+            self.apply_history.append({
+                'id': self.next_apply_id,
                 'candidate_id': candidate['id'],
-                'contact_date': response_date.isoformat(),
-                'contact_method': random.choice(['email', 'phone']),
-                'contact_source': 'Candidate',
-                'interest_level': interest_level,
-                'follow_up_needed': interest_level in ['High', 'Medium'],
-                'job_id': job['id']
+                'job_position_id': job['id'],
+                'apply_date': apply_date.isoformat(),
+                'status': status,
+                'referral_source': 'Recruiter',
+                'apply_method': random.choice([
+                    "LinkedIn Easy Apply", "Company Website",
+                    "Email Application", "Internal Referral System",
+                    "Recruiter Submit"]),
+                'additional_notes': additional_notes,
             })
-            self.next_contact_id += 1
-            
-            # Generate application if interested
-            if interest_level in ['High', 'Medium']:
-                apply_date = response_date + timedelta(days=random.randint(1, 3))
-                
-                self.apply_history.append({
-                    'id': self.next_apply_id,
-                    'candidate_id': candidate['id'],
-                    'job_position_id': job['id'],
-                    'apply_date': apply_date.isoformat(),
-                    'status': 'pending',
-                    'referral_source': 'Recruiter',
-                    'apply_method': random.choice(['Company Website', 'Email Application'])
-                })
-                self.next_apply_id += 1
-    
+            self.next_apply_id += 1
+
     def _close_old_jobs(self):
         """Close jobs from previous months"""
         current_month = self.current_date.replace(day=1)
@@ -211,8 +183,8 @@ class RecruitingSimulator:
         for job in self.jobs:
             job_date = datetime.fromisoformat(job['posting_date']).replace(day=1)
             if job_date < current_month:
-                job['status'] = 'Closed'
-    
+                job['status'] = random.choice(['Closed', 'Filled'])
+
     def _finalize_statuses(self):
         """Finalize application statuses for closed jobs"""
         for application in self.apply_history:

@@ -23,14 +23,14 @@ CONFIG = {
           
   # Monthly generation parameters
   "new_jobs_per_month": {
-      "Business Analytics": 3,
-      "Data Science": 1,
-      "Software Engineering": 5
+      "Business Analytics": 30,
+      "Data Science": 15,
+      "Software Engineering": 40,
   },
   "new_candidates_per_month": {
-      "Business Analytics": 8,
-      "Data Science": 5,
-      "Software Engineering": 8
+      "Business Analytics": 30,
+      "Data Science": 15,
+      "Software Engineering": 30,
   },
   # job_roles is a dictionary with keys as job categories/department specializations and values as a dictionary with titles and skillsets
   "job_roles":   {
