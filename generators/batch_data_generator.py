@@ -4,6 +4,8 @@ from faker import Faker
 from typing import Dict, List, Any
 from config.config import CONFIG
 from generators.candidate_generator import CandidateGenerator
+from generators.company_generator import CompanyDataGenerator
+from generators.job_generator import JobDataGenerator
 
 fake = Faker()
 
@@ -22,9 +24,10 @@ class RecruitingSimulator:
         self.candidates = []
         self.contact_history = []
         self.apply_history = []
+
+        self._generate_job_for_dept = JobDataGenerator().generate_job_for_dept
         
         # ID counters
-        self.next_job_id = 0
         self.next_contact_id = 0
         self.next_apply_id = 0
     
@@ -32,10 +35,10 @@ class RecruitingSimulator:
         """Generate complete recruiting dataset over specified months"""
         # 1. Initial Setup
         self._generate_initial_candidates()
-        # self._generate_departments()
-        # self._generate_initial_jobs()
+        self._generate_departments()
+        self._generate_initial_jobs()
         
-        # # 2. Monthly Cycles
+        # 2. Monthly Cycles
         # for _ in range(number_of_months - 1):  # -1 because we already generated initial month
         #     self._simulate_month()
         
@@ -44,29 +47,21 @@ class RecruitingSimulator:
         
         return {
             'candidates': self.candidates,
-        #     'departments': self.departments,
-        #     'jobs': self.jobs,
+            'departments': self.departments,
+            'jobs': self.jobs,
         #     'contact_history': self.contact_history,
         #     'apply_history': self.apply_history
         }
     
     def _generate_departments(self):
-        """Generate departments for each job category"""
-        dept_id = 0
-        companies = ['RBC', 'TD', 'BMO', 'CIBC', 'Scotiabank']
-        locations = ['Toronto', 'Vancouver', 'Montreal']
-        
-        for company in companies:
-            for category in self.job_categories:
-                self.departments.append({
-                    'id': dept_id,
-                    'company_department_name': f"{category}, {company}",
-                    'department_type': category,
-                    'location': random.choice(locations),
-                    'department_size': random.randint(5, 30)
-                })
-                dept_id += 1
-    
+        for category in self.job_categories:
+            self.departments.extend(CompanyDataGenerator().generate_dept_for_category(category, 15))
+      
+    def _generate_initial_jobs(self):
+        """Generate initial job openings"""
+        for department in self.departments:
+            self.jobs.extend(self._generate_job_for_dept(department, self.new_jobs_per_month[department['dept_specialization']]))
+
     def _generate_initial_candidates(self):
         """Generate initial candidate pool"""
         for category in self.job_categories:
@@ -76,15 +71,10 @@ class RecruitingSimulator:
         """Generate specified number of candidates for a category"""
         self.candidates.extend(CandidateGenerator().generate_candidates_for_category(category, count))
     
-    def _generate_initial_jobs(self):
-        """Generate initial job openings"""
-        for category in self.job_categories:
-            self._generate_jobs_for_category(category, self.new_jobs_per_month[category])
-    
     def _generate_jobs_for_category(self, category: str, count: int):
         """Generate specified number of jobs for a category"""
         # Get departments for this category
-        category_departments = [d for d in self.departments if d['department_type'] == category]
+        category_departments = [d for d in self.departments if d['dept_specialization'] == category]
         
         for _ in range(count):
             dept = random.choice(category_departments)
