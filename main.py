@@ -4,7 +4,7 @@ from utils.file_utils import save_json
 from generators.recruit_simulator import RecruitingSimulator
 
 def main(args):
-    if args.batch:
+    if args.generate:
         number_of_months=6
         dataset = RecruitingSimulator().generate_dataset(number_of_months=number_of_months)
  
@@ -35,7 +35,7 @@ def main(args):
 
         # print("\nExample Application:")
         # custom_print(apply_history[0])
-        
+
         save_json(candidates, "candidates.json")
         save_json(departments, "company_departments.json")
         save_json(jobs, "jobs.json")
@@ -47,8 +47,8 @@ def main(args):
         print()
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate data for various tables.")
-    parser.add_argument('--batch', action='store_true')
+    parser = argparse.ArgumentParser(description="Generate data for 5 tables.")
+    parser.add_argument('--generate', action='store_true')
     parser.add_argument('--print', action='store_true', help="print pre-defined job data")
 
     args = parser.parse_args()
