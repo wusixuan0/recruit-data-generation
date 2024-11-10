@@ -5,6 +5,7 @@ from faker import Faker
 from utils.get_skills_for_role import get_skills_for_role
 from config.config import CONFIG
 from config.other_config import OTHER_CONFIG
+import uuid
 fake = Faker()
 
 class CandidateGenerator:
@@ -31,11 +32,9 @@ class CandidateGenerator:
             })
 
         return positions
-    def generate_candidate(self, id, role_category):
+    
+    def generate_candidate(self, role_category):
         """Generate a single candidate with structured matching fields"""
-        if role_category is None:
-            # Select a random role category and its details
-            role_category = random.choice(list(CONFIG['job_roles'].keys()))
         yoe = random.randint(0, 15)
         is_structured = random.random() > 0.3  # 70% clean data, 30% messy
 
@@ -44,18 +43,17 @@ class CandidateGenerator:
         work_experience = self.generate_work_experience(role_category, yoe)
 
         # Generate location preference
-        location_type = random.choice(['city', 'remote'])
-        if location_type == 'city':
-            location = random.choice(OTHER_CONFIG['locations']['cities'])
-        else:
-            location = random.choice(OTHER_CONFIG['locations']['remote_policies'])
+        location = random.choice(OTHER_CONFIG['locations']['cities'])
+        location_type = random.random() > 0.5
+        location_preference = location if location_type else 'remote'
 
         status = random.choice(OTHER_CONFIG['candidate_status_keywords'])
 
         return {
-            'id': id,
+            'id': str(uuid.uuid4()),
             'full_name': fake.name(),
             'location': location,
+            'location_preference': location_preference,
             'work_experience': (
                 json.dumps(work_experience)
                 if is_structured
@@ -71,5 +69,6 @@ class CandidateGenerator:
             'status': status,
             'updated_at': self.current_date.isoformat()
         }
-    def generate_data(self, num_candidates=500, role_category=None):
-        return [self.generate_candidate(i, role_category) for i in range(num_candidates)]
+    
+    def generate_candidates_for_category(self, role_category, count):
+        return [self.generate_candidate(role_category) for _ in range(count)]

@@ -2,23 +2,19 @@ import random
 from datetime import datetime, timedelta
 from faker import Faker
 from typing import Dict, List, Any
+from config.config import CONFIG
+from generators.candidate_generator import CandidateGenerator
 
 fake = Faker()
 
 class RecruitingSimulator:
     def __init__(self, start_date: datetime = None):
         self.current_date = start_date or datetime.now()
-        self.job_categories = ['Data Analytics', 'Software Engineering']
+        self.job_categories = CONFIG["role_categories"]
         
         # Monthly generation parameters
-        self.new_jobs_per_month = {
-            'Data Analytics': 3,
-            'Software Engineering': 4
-        }
-        self.new_candidates_per_month = {
-            'Data Analytics': 5,
-            'Software Engineering': 8
-        }
+        self.new_jobs_per_month = CONFIG["new_jobs_per_month"]
+        self.new_candidates_per_month = CONFIG["new_candidates_per_month"]        
         
         # Initialize data stores
         self.departments = []
@@ -29,30 +25,29 @@ class RecruitingSimulator:
         
         # ID counters
         self.next_job_id = 0
-        self.next_candidate_id = 0
         self.next_contact_id = 0
         self.next_apply_id = 0
     
     def generate_dataset(self, number_of_months: int) -> Dict[str, List[Dict[str, Any]]]:
         """Generate complete recruiting dataset over specified months"""
         # 1. Initial Setup
-        self._generate_departments()
         self._generate_initial_candidates()
-        self._generate_initial_jobs()
+        # self._generate_departments()
+        # self._generate_initial_jobs()
         
-        # 2. Monthly Cycles
-        for _ in range(number_of_months - 1):  # -1 because we already generated initial month
-            self._simulate_month()
+        # # 2. Monthly Cycles
+        # for _ in range(number_of_months - 1):  # -1 because we already generated initial month
+        #     self._simulate_month()
         
-        # 3. Finalize dataset
-        self._finalize_statuses()
+        # # 3. Finalize dataset
+        # self._finalize_statuses()
         
         return {
-            'departments': self.departments,
-            'jobs': self.jobs,
             'candidates': self.candidates,
-            'contact_history': self.contact_history,
-            'apply_history': self.apply_history
+        #     'departments': self.departments,
+        #     'jobs': self.jobs,
+        #     'contact_history': self.contact_history,
+        #     'apply_history': self.apply_history
         }
     
     def _generate_departments(self):
@@ -79,17 +74,7 @@ class RecruitingSimulator:
     
     def _generate_candidates_for_category(self, category: str, count: int):
         """Generate specified number of candidates for a category"""
-        for _ in range(count):
-            self.candidates.append({
-                'id': self.next_candidate_id,
-                'full_name': fake.name(),
-                'role_category': category,
-                'location': random.choice(['Toronto', 'Vancouver', 'Montreal']),
-                'YOE': random.randint(0, 15),
-                'status': random.choice(['Active', 'Passive']),
-                'updated_at': self.current_date.isoformat()
-            })
-            self.next_candidate_id += 1
+        self.candidates.extend(CandidateGenerator().generate_candidates_for_category(category, count))
     
     def _generate_initial_jobs(self):
         """Generate initial job openings"""
@@ -190,7 +175,7 @@ class RecruitingSimulator:
             'candidate_id': candidate['id'],
             'contact_date': contact_date.isoformat(),
             'contact_method': random.choice(['email', 'phone']),
-            'contact_source': 'Recruiter',
+            'contact_source': 'Recruiter', # email, zendesk, and manual notes.
             'interest_level': None,
             'follow_up_needed': True,
             'job_id': job['id']

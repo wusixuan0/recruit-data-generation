@@ -20,6 +20,18 @@ CONFIG = {
     },
   },
   "role_categories": ["Data Science", "Software Engineering", "Business Analytics"],
+          
+  # Monthly generation parameters
+  "new_jobs_per_month": {
+      "Business Analytics": 3,
+      "Data Science": 1,
+      "Software Engineering": 5
+  },
+  "new_candidates_per_month": {
+      "Business Analytics": 8,
+      "Data Science": 5,
+      "Software Engineering": 8
+  },
   # job_roles is a dictionary with keys as job categories/department specializations and values as a dictionary with titles and skillsets
   "job_roles":   {
     "Data Science":     {

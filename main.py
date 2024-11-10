@@ -10,31 +10,33 @@ from generators.batch_data_generator import RecruitingSimulator
 
 def main(args):
     if args.batch:
-        dataset = RecruitingSimulator().generate_dataset(number_of_months=6)
-        
-        print(f"Generated dataset over 6 months:")
-        print(f"Departments: {len(dataset['departments'])}")
-        print(f"Jobs: {len(dataset['jobs'])}")
-        print(f"Candidates: {len(dataset['candidates'])}")
-        print(f"Contacts: {len(dataset['contact_history'])}")
-        print(f"Applications: {len(dataset['apply_history'])}")
-
-        departments = dataset['departments']
-        jobs = dataset['jobs']
+        number_of_months=6
+        dataset = RecruitingSimulator().generate_dataset(number_of_months=number_of_months)
+ 
+        # departments = dataset['departments']
+        # jobs = dataset['jobs']
         candidates = dataset['candidates']
-        apply_history = dataset['apply_history']
+        # apply_history = dataset['apply_history']
+       
+        print(f"Generated dataset over {number_of_months} months:")
+        print(f"Candidates: {len(candidates)}")
+        # print(f"Departments: {len(dataset['departments'])}")
+        # print(f"Jobs: {len(dataset['jobs'])}")
+        # print(f"Contacts: {len(dataset['contact_history'])}")
+        # print(f"Applications: {len(dataset['apply_history'])}")
 
-        print("\nExample Department:")
-        custom_print(departments[0])
+        # print("\nExample Department:")
+        # custom_print(departments[0])
 
-        print("\nExample Job:")
-        custom_print(jobs[0])
+        # print("\nExample Job:")
+        # custom_print(jobs[0])
 
         print("\nExample Candidate:")
         custom_print(candidates[0])
 
-        print("\nExample Application:")
-        custom_print(apply_history[0])
+        # print("\nExample Application:")
+        # custom_print(apply_history[0])
+    
     if args.print:
         custom_print()
         print()
