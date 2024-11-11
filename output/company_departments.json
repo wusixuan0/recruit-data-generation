@@ -1,36 +1,10 @@
 [
   {
-    "id": "6437f4a3-a928-4487-a124-0a99a376b8ca",
-    "company_department_name": "Data Science Team, Berry-Morgan",
-    "dept_specialization": "Data Science",
-    "location": "Waterloo",
-    "department_size": 24,
-    "roles": [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Data Analyst",
-      "AI Research Scientist"
-    ]
-  },
-  {
-    "id": "2bf3e80a-1c37-4b96-ba55-16c48164bfc3",
-    "company_department_name": "Data Science Team, Microsoft",
-    "dept_specialization": "Data Science",
-    "location": "Ottawa",
-    "department_size": 8,
-    "roles": [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Data Analyst",
-      "AI Research Scientist"
-    ]
-  },
-  {
-    "id": "acd6519c-99a4-49db-ad2e-ec97a722d0f0",
-    "company_department_name": "Data Science Team, Kelley, Robinson and Stewart",
+    "id": "0f9418b5-7e1c-4271-a372-17f03342b09f",
+    "company_department_name": "Data Science Team, Wade-Ochoa",
     "dept_specialization": "Data Science",
     "location": "Toronto",
-    "department_size": 9,
+    "department_size": 37,
     "roles": [
       "Data Scientist",
       "Machine Learning Engineer",
@@ -39,10 +13,10 @@
     ]
   },
   {
-    "id": "8ca8a579-b0aa-4e42-a93b-8f2091165f79",
-    "company_department_name": "Data Science Team, Amazon",
+    "id": "c1e07953-2911-402b-b715-9a10a87d4ede",
+    "company_department_name": "Data Science Team, Cisneros, Collins and Banks",
     "dept_specialization": "Data Science",
-    "location": "Vancouver",
+    "location": "Toronto",
     "department_size": 24,
     "roles": [
       "Data Scientist",
@@ -52,10 +26,36 @@
     ]
   },
   {
-    "id": "352aed2f-ac6c-4e5b-900c-e82854f9621e",
-    "company_department_name": "Data Science Team, Google",
+    "id": "9ea62f7a-1ca4-433c-a110-8ccf68587ecf",
+    "company_department_name": "Data Science Team, TD",
     "dept_specialization": "Data Science",
     "location": "Waterloo",
+    "department_size": 16,
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
+    ]
+  },
+  {
+    "id": "d9fb1c65-a939-47fe-a988-980502c4b99b",
+    "company_department_name": "Data Science Team, King Inc",
+    "dept_specialization": "Data Science",
+    "location": "Vancouver",
+    "department_size": 47,
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
+    ]
+  },
+  {
+    "id": "82b47dfe-2b19-451e-b4ca-d98a8cacc93a",
+    "company_department_name": "Data Science Team, Sun Life",
+    "dept_specialization": "Data Science",
+    "location": "Ottawa",
     "department_size": 31,
     "roles": [
       "Data Scientist",
@@ -65,10 +65,10 @@
     ]
   },
   {
-    "id": "44858448-577a-478d-b9d3-db7549991e65",
-    "company_department_name": "Data Science Team, Shopify",
+    "id": "5ca2df31-8a9d-43ed-8d84-17877bbdd9bc",
+    "company_department_name": "Data Science Team, Gordon, Murphy and Powell",
     "dept_specialization": "Data Science",
-    "location": "Montreal",
+    "location": "Ottawa",
     "department_size": 42,
     "roles": [
       "Data Scientist",
@@ -78,11 +78,11 @@
     ]
   },
   {
-    "id": "a3aaf144-354b-4f30-8e9b-a3931aac4f3f",
-    "company_department_name": "Data Science Team, Google",
+    "id": "7ff1beec-86bc-42e1-9411-5c8a6e479b9a",
+    "company_department_name": "Data Science Team, Hancock-Rhodes",
     "dept_specialization": "Data Science",
     "location": "Waterloo",
-    "department_size": 33,
+    "department_size": 48,
     "roles": [
       "Data Scientist",
       "Machine Learning Engineer",
@@ -91,11 +91,50 @@
     ]
   },
   {
-    "id": "28e96f93-155a-4ddf-8b1a-275b7781edcd",
+    "id": "e5af581b-4b1d-4358-bd6f-a20104690770",
+    "company_department_name": "Data Science Team, TD",
+    "dept_specialization": "Data Science",
+    "location": "Waterloo",
+    "department_size": 30,
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
+    ]
+  },
+  {
+    "id": "cf3b35fe-8416-4388-93e1-4cc9cdf272b3",
+    "company_department_name": "Data Science Team, Johnson, Garcia and Flowers",
+    "dept_specialization": "Data Science",
+    "location": "Ottawa",
+    "department_size": 38,
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
+    ]
+  },
+  {
+    "id": "69596cd0-c406-46f9-a6a8-617ca20a7179",
+    "company_department_name": "Data Science Team, TD",
+    "dept_specialization": "Data Science",
+    "location": "Ottawa",
+    "department_size": 40,
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
+    ]
+  },
+  {
+    "id": "c8660270-fe5f-4963-9f91-48a055ab1536",
     "company_department_name": "Data Science Team, Sun Life",
     "dept_specialization": "Data Science",
-    "location": "Toronto",
-    "department_size": 29,
+    "location": "Montreal",
+    "department_size": 13,
     "roles": [
       "Data Scientist",
       "Machine Learning Engineer",
@@ -104,24 +143,11 @@
     ]
   },
   {
-    "id": "cbb6f5d3-98b6-4d9d-8019-30488d92d15d",
-    "company_department_name": "Data Science Team, Garcia, Rivera and Taylor",
-    "dept_specialization": "Data Science",
-    "location": "Ottawa",
-    "department_size": 17,
-    "roles": [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Data Analyst",
-      "AI Research Scientist"
-    ]
-  },
-  {
-    "id": "d372de8f-5e05-4e78-9d44-1b38b036075b",
-    "company_department_name": "Data Science Team, Berry-Heath",
+    "id": "5eabed5c-52e7-456e-947f-562063183d08",
+    "company_department_name": "Data Science Team, Shepherd-Meyer",
     "dept_specialization": "Data Science",
     "location": "Waterloo",
-    "department_size": 7,
+    "department_size": 23,
     "roles": [
       "Data Scientist",
       "Machine Learning Engineer",
@@ -130,62 +156,10 @@
     ]
   },
   {
-    "id": "8652e93f-78bc-453e-851f-e4377ab63b2d",
-    "company_department_name": "Data Science Team, Wood-Sanford",
-    "dept_specialization": "Data Science",
-    "location": "Vancouver",
-    "department_size": 5,
-    "roles": [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Data Analyst",
-      "AI Research Scientist"
-    ]
-  },
-  {
-    "id": "df913b1d-9b92-4bc5-af16-eec0380bd123",
-    "company_department_name": "Data Science Team, Stewart-Brown",
-    "dept_specialization": "Data Science",
-    "location": "Ottawa",
-    "department_size": 7,
-    "roles": [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Data Analyst",
-      "AI Research Scientist"
-    ]
-  },
-  {
-    "id": "ac1d2333-96f2-44e7-9888-012be2954bdf",
-    "company_department_name": "Data Science Team, CIBC",
-    "dept_specialization": "Data Science",
-    "location": "Ottawa",
-    "department_size": 43,
-    "roles": [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Data Analyst",
-      "AI Research Scientist"
-    ]
-  },
-  {
-    "id": "c83ee9e4-c344-4316-8be2-c5e7c09e8456",
-    "company_department_name": "Data Science Team, Hodges-Guzman",
+    "id": "55bc5f68-a77c-4aa1-b2bf-50d99d2f42b3",
+    "company_department_name": "Data Science Team, Manulife",
     "dept_specialization": "Data Science",
     "location": "Waterloo",
-    "department_size": 9,
-    "roles": [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Data Analyst",
-      "AI Research Scientist"
-    ]
-  },
-  {
-    "id": "84b5a59d-ff6d-4fef-9ed0-caa58cbfd2a9",
-    "company_department_name": "Data Science Team, Daniels LLC",
-    "dept_specialization": "Data Science",
-    "location": "Vancouver",
     "department_size": 25,
     "roles": [
       "Data Scientist",
@@ -195,99 +169,34 @@
     ]
   },
   {
-    "id": "8c8a8bb1-8b08-42d5-9b4e-06073a7762ad",
-    "company_department_name": "Software Engineering Team, CIBC",
-    "dept_specialization": "Software Engineering",
-    "location": "Vancouver",
-    "department_size": 28,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "cfe5b669-ae82-4779-b7ff-e64b9870bbff",
-    "company_department_name": "Software Engineering Team, Microsoft",
-    "dept_specialization": "Software Engineering",
-    "location": "Toronto",
-    "department_size": 43,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "b9dfbcdd-4dbe-41e3-aa80-aa0ee92a890f",
-    "company_department_name": "Software Engineering Team, Thomas and Sons",
-    "dept_specialization": "Software Engineering",
-    "location": "Montreal",
-    "department_size": 40,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "1557ce8a-57ee-4f87-920a-4744141f9ab2",
-    "company_department_name": "Software Engineering Team, Gray, Nguyen and Dalton",
-    "dept_specialization": "Software Engineering",
+    "id": "6545661d-c775-45c5-b3dd-30d5d9d4fc4e",
+    "company_department_name": "Data Science Team, Khan Ltd",
+    "dept_specialization": "Data Science",
     "location": "Ottawa",
-    "department_size": 10,
+    "department_size": 20,
     "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
     ]
   },
   {
-    "id": "53aa1e65-51dd-4afe-8a55-58c4169a0f49",
-    "company_department_name": "Software Engineering Team, Sun Life",
-    "dept_specialization": "Software Engineering",
-    "location": "Montreal",
-    "department_size": 28,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "15267db6-e723-49bc-9628-e96c813ad8cb",
-    "company_department_name": "Software Engineering Team, Bailey, Wagner and Nash",
-    "dept_specialization": "Software Engineering",
-    "location": "Waterloo",
-    "department_size": 46,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "6991e2c7-2914-4c27-a0a0-45e7611af7d1",
-    "company_department_name": "Software Engineering Team, Manulife",
-    "dept_specialization": "Software Engineering",
+    "id": "f0982877-82b1-40a5-8e19-82f638a40c9c",
+    "company_department_name": "Data Science Team, Manulife",
+    "dept_specialization": "Data Science",
     "location": "Toronto",
-    "department_size": 44,
+    "department_size": 35,
     "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
     ]
   },
   {
-    "id": "e58a5589-af88-436e-88ae-4c3fab84ef41",
-    "company_department_name": "Software Engineering Team, Ross, Mathis and Willis",
+    "id": "9f17bd18-8b04-4592-8b4d-f51d7fa76a85",
+    "company_department_name": "Software Engineering Team, Scotiabank",
     "dept_specialization": "Software Engineering",
     "location": "Toronto",
     "department_size": 24,
@@ -299,11 +208,11 @@
     ]
   },
   {
-    "id": "3c11658c-1fec-4195-861e-b5442c90e6b6",
-    "company_department_name": "Software Engineering Team, Manulife",
+    "id": "ea88b696-4e4b-4887-abd1-2f006141f374",
+    "company_department_name": "Software Engineering Team, TD",
     "dept_specialization": "Software Engineering",
-    "location": "Montreal",
-    "department_size": 46,
+    "location": "Waterloo",
+    "department_size": 17,
     "roles": [
       "Software Engineer",
       "Full Stack Developer",
@@ -312,23 +221,36 @@
     ]
   },
   {
-    "id": "682ee7aa-0114-49d6-9f5a-f6e86c189950",
-    "company_department_name": "Software Engineering Team, West, Jackson and Meyer",
-    "dept_specialization": "Software Engineering",
-    "location": "Montreal",
-    "department_size": 33,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "7b96958c-0418-43cc-8a69-6b601905174e",
-    "company_department_name": "Software Engineering Team, RBC",
+    "id": "4d2d9013-69c1-4485-8b07-7d06cb948a4b",
+    "company_department_name": "Software Engineering Team, Sun Life",
     "dept_specialization": "Software Engineering",
     "location": "Toronto",
+    "department_size": 9,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "1bf39498-fb51-4137-812e-04850dfd761b",
+    "company_department_name": "Software Engineering Team, Smith, Waller and Love",
+    "dept_specialization": "Software Engineering",
+    "location": "Vancouver",
+    "department_size": 23,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "53dcb591-10ff-48f7-a609-2094544f51af",
+    "company_department_name": "Software Engineering Team, James-Serrano",
+    "dept_specialization": "Software Engineering",
+    "location": "Ottawa",
     "department_size": 26,
     "roles": [
       "Software Engineer",
@@ -338,36 +260,10 @@
     ]
   },
   {
-    "id": "701586e8-2fb6-4344-a3db-fcdfbf3c3a57",
-    "company_department_name": "Software Engineering Team, Garrett-Costa",
-    "dept_specialization": "Software Engineering",
-    "location": "Ottawa",
-    "department_size": 46,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "a9bb2b02-fc93-42db-af28-11e0bff18eee",
-    "company_department_name": "Software Engineering Team, Microsoft",
+    "id": "04a73218-f3c6-4809-a6f7-b68fb6c04ebc",
+    "company_department_name": "Software Engineering Team, Amazon",
     "dept_specialization": "Software Engineering",
     "location": "Toronto",
-    "department_size": 35,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "85df86e2-9e2c-4529-9b68-ac1eee89668c",
-    "company_department_name": "Software Engineering Team, Howard, Anthony and Moore",
-    "dept_specialization": "Software Engineering",
-    "location": "Ottawa",
     "department_size": 15,
     "roles": [
       "Software Engineer",
@@ -377,50 +273,128 @@
     ]
   },
   {
-    "id": "81f3f088-d18a-4c2b-8e1a-69158221ac38",
-    "company_department_name": "Software Engineering Team, Lewis LLC",
+    "id": "8cf494e2-9aea-4443-a936-b8123429e448",
+    "company_department_name": "Software Engineering Team, Fowler-Bryant",
     "dept_specialization": "Software Engineering",
-    "location": "Toronto",
-    "department_size": 13,
-    "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
-    ]
-  },
-  {
-    "id": "376b98a0-f2d8-4afe-bff6-c67c72bf8cbc",
-    "company_department_name": "Business Analytics Team, RBC",
-    "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 15,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "38e18591-dcdc-4e98-b619-ef260b58e9e5",
-    "company_department_name": "Business Analytics Team, TD",
-    "dept_specialization": "Business Analytics",
-    "location": "Montreal",
-    "department_size": 38,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "cd50c209-f7df-4ca7-b42f-33a470bc7f98",
-    "company_department_name": "Business Analytics Team, Hernandez Group",
-    "dept_specialization": "Business Analytics",
     "location": "Waterloo",
-    "department_size": 18,
+    "department_size": 6,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "d99a240b-86cf-4773-bbe0-e90bbaf3bd73",
+    "company_department_name": "Software Engineering Team, Manulife",
+    "dept_specialization": "Software Engineering",
+    "location": "Vancouver",
+    "department_size": 12,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "edbc8901-e1a2-48be-874d-f9641be9dab4",
+    "company_department_name": "Software Engineering Team, Sun Life",
+    "dept_specialization": "Software Engineering",
+    "location": "Waterloo",
+    "department_size": 21,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "dc7e3ec7-2a4b-4e98-aada-d4739a7a7921",
+    "company_department_name": "Software Engineering Team, Hernandez-Santos",
+    "dept_specialization": "Software Engineering",
+    "location": "Waterloo",
+    "department_size": 6,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "422f19fc-c17d-43e4-81bf-a7ff07897345",
+    "company_department_name": "Software Engineering Team, Stewart, Walker and Miller",
+    "dept_specialization": "Software Engineering",
+    "location": "Montreal",
+    "department_size": 28,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "2dd4b091-7301-444d-9065-b33aa56ff79c",
+    "company_department_name": "Software Engineering Team, Lewis-Shaw",
+    "dept_specialization": "Software Engineering",
+    "location": "Vancouver",
+    "department_size": 48,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "59b46252-c425-4306-817c-ad5ecb2a3be7",
+    "company_department_name": "Software Engineering Team, Manulife",
+    "dept_specialization": "Software Engineering",
+    "location": "Waterloo",
+    "department_size": 22,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "47935f10-ef63-42a7-ba2d-f6a75a3e3b49",
+    "company_department_name": "Software Engineering Team, Sun Life",
+    "dept_specialization": "Software Engineering",
+    "location": "Vancouver",
+    "department_size": 33,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "08eaeb35-c9fb-48d5-8d56-05b75f9d2e52",
+    "company_department_name": "Software Engineering Team, Manulife",
+    "dept_specialization": "Software Engineering",
+    "location": "Ottawa",
+    "department_size": 45,
+    "roles": [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer"
+    ]
+  },
+  {
+    "id": "74e69dd2-74ce-4620-b9cd-848ba4ad9a9b",
+    "company_department_name": "Business Analytics Team, Manulife",
+    "dept_specialization": "Business Analytics",
+    "location": "Vancouver",
+    "department_size": 28,
     "roles": [
       "Business Analyst",
       "Business Intelligence Analyst",
@@ -429,8 +403,8 @@
     ]
   },
   {
-    "id": "4e90bd3d-1064-428b-aa33-c91dfa0001e7",
-    "company_department_name": "Business Analytics Team, Greer Ltd",
+    "id": "58aa352d-ca10-421c-b194-ee1de391d6c8",
+    "company_department_name": "Business Analytics Team, RBC",
     "dept_specialization": "Business Analytics",
     "location": "Vancouver",
     "department_size": 50,
@@ -442,127 +416,10 @@
     ]
   },
   {
-    "id": "3eb2a895-7ba1-4799-9dea-f291b02b1639",
-    "company_department_name": "Business Analytics Team, Duncan-Wright",
-    "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 29,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "27660dbf-b210-452d-8396-e2ebac521748",
-    "company_department_name": "Business Analytics Team, TD",
-    "dept_specialization": "Business Analytics",
-    "location": "Montreal",
-    "department_size": 41,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "3f7f2556-50ef-420e-bcf7-0546f0e0bcd1",
-    "company_department_name": "Business Analytics Team, TD",
-    "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 31,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "c4ba36cb-9ccd-48b3-b42d-b721fd4065c4",
-    "company_department_name": "Business Analytics Team, Morris-Cobb",
-    "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 17,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "9a2cafaf-ae24-47ea-9efb-2cccef74091c",
-    "company_department_name": "Business Analytics Team, Shaw PLC",
-    "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 14,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "7f85ce4c-7f0c-4462-b5f1-dda0a179998b",
-    "company_department_name": "Business Analytics Team, Microsoft",
-    "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 17,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "8ea46fa9-03f1-4d07-93dd-93a78f26ab0b",
-    "company_department_name": "Business Analytics Team, Jones, Santos and Durham",
+    "id": "17cf3179-a594-4940-bf24-41bd4429c6c3",
+    "company_department_name": "Business Analytics Team, Burke-Calhoun",
     "dept_specialization": "Business Analytics",
     "location": "Vancouver",
-    "department_size": 6,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "a168d438-d448-4fe6-b8bc-d3800490a4b7",
-    "company_department_name": "Business Analytics Team, TD",
-    "dept_specialization": "Business Analytics",
-    "location": "Ottawa",
-    "department_size": 46,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "1ff21b61-0a19-4cad-b22a-ec8ce2d14950",
-    "company_department_name": "Business Analytics Team, Johnson-Allen",
-    "dept_specialization": "Business Analytics",
-    "location": "Waterloo",
-    "department_size": 38,
-    "roles": [
-      "Business Analyst",
-      "Business Intelligence Analyst",
-      "Product Analyst",
-      "Analytics Consultant"
-    ]
-  },
-  {
-    "id": "eec0e918-adaa-4bde-9a2c-df2597e20805",
-    "company_department_name": "Business Analytics Team, Google",
-    "dept_specialization": "Business Analytics",
-    "location": "Montreal",
     "department_size": 18,
     "roles": [
       "Business Analyst",
@@ -572,11 +429,11 @@
     ]
   },
   {
-    "id": "c7862bdc-00f5-45b7-a1cf-d508f315d594",
-    "company_department_name": "Business Analytics Team, Manulife",
+    "id": "2717d476-06d4-406b-a78d-136ff1c31134",
+    "company_department_name": "Business Analytics Team, Lee-Johnson",
     "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 35,
+    "location": "Ottawa",
+    "department_size": 50,
     "roles": [
       "Business Analyst",
       "Business Intelligence Analyst",
@@ -585,11 +442,11 @@
     ]
   },
   {
-    "id": "a6311aee-d98b-4a13-9e10-67a9f8f5fb25",
-    "company_department_name": "Business Analytics Team, Mitchell, Collins and Mason",
+    "id": "eb1174d5-c0e8-439f-a605-b8ff0e824ea1",
+    "company_department_name": "Business Analytics Team, CIBC",
     "dept_specialization": "Business Analytics",
-    "location": "Toronto",
-    "department_size": 21,
+    "location": "Vancouver",
+    "department_size": 23,
     "roles": [
       "Business Analyst",
       "Business Intelligence Analyst",
@@ -598,21 +455,34 @@
     ]
   },
   {
-    "id": "44e4d5fa-5718-476a-a5d7-d03a83f67f6a",
-    "company_department_name": "Software Engineering Team, BMO",
-    "dept_specialization": "Software Engineering",
+    "id": "6bd1e147-985a-4f5d-b9f3-053c0fe3a58c",
+    "company_department_name": "Business Analytics Team, BMO",
+    "dept_specialization": "Business Analytics",
+    "location": "Ottawa",
+    "department_size": 39,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "ddaab493-eb7f-4d70-ad74-909449557f35",
+    "company_department_name": "Business Analytics Team, Canada Life",
+    "dept_specialization": "Business Analytics",
     "location": "Montreal",
-    "department_size": 41,
+    "department_size": 48,
     "roles": [
-      "Software Engineer",
-      "Full Stack Developer",
-      "Backend Developer",
-      "Frontend Developer"
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
     ]
   },
   {
-    "id": "3bbe582b-920f-4990-b7c5-265bf898492f",
-    "company_department_name": "Business Analytics Team, RBC",
+    "id": "0ada900d-a260-4acb-ae88-b3ec059c5c29",
+    "company_department_name": "Business Analytics Team, Sun Life",
     "dept_specialization": "Business Analytics",
     "location": "Toronto",
     "department_size": 7,
@@ -624,10 +494,1102 @@
     ]
   },
   {
-    "id": "193cba09-30ef-4738-a612-cb1c19aa38e5",
-    "company_department_name": "Data Science Team, Bryant-Jones",
-    "dept_specialization": "Data Science",
+    "id": "06a72754-930e-4549-85f9-de919252dc55",
+    "company_department_name": "Business Analytics Team, Scotiabank",
+    "dept_specialization": "Business Analytics",
+    "location": "Ottawa",
+    "department_size": 46,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "b8d36b2a-0c43-4600-8cf8-80014a254b15",
+    "company_department_name": "Business Analytics Team, CIBC",
+    "dept_specialization": "Business Analytics",
+    "location": "Vancouver",
+    "department_size": 44,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "a1b9f626-1bda-4904-822c-6f603e21c995",
+    "company_department_name": "Business Analytics Team, Shelton, Duran and Kim",
+    "dept_specialization": "Business Analytics",
     "location": "Toronto",
+    "department_size": 33,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "623f8ec4-4c95-4b22-83e5-837d31f34144",
+    "company_department_name": "Business Analytics Team, Allen, Dominguez and Parker",
+    "dept_specialization": "Business Analytics",
+    "location": "Vancouver",
+    "department_size": 50,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "4be8e4ca-72e4-4397-80df-14374fe2eb23",
+    "company_department_name": "Business Analytics Team, Pierce, Potter and Roberts",
+    "dept_specialization": "Business Analytics",
+    "location": "Ottawa",
+    "department_size": 13,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "94ca0770-a0aa-4394-8d7b-36dc4cd64e34",
+    "company_department_name": "Business Analytics Team, Scotiabank",
+    "dept_specialization": "Business Analytics",
+    "location": "Ottawa",
+    "department_size": 10,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "5d8ed6f2-49be-4ab0-88d1-10a9898561df",
+    "company_department_name": "Business Analytics Team, Valdez, Hall and Curtis",
+    "dept_specialization": "Business Analytics",
+    "location": "Vancouver",
+    "department_size": 47,
+    "roles": [
+      "Business Analyst",
+      "Business Intelligence Analyst",
+      "Product Analyst",
+      "Analytics Consultant"
+    ]
+  },
+  {
+    "id": "9f06fefd-057d-4df4-8204-8a229e6ea056",
+    "company_department_name": "Data Analytics Team, Leonard and Sons",
+    "dept_specialization": "Data Analytics",
+    "location": "Toronto",
+    "department_size": 15,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "add356a6-67ca-4a25-a52f-7e106756d522",
+    "company_department_name": "Data Analytics Team, Sun Life",
+    "dept_specialization": "Data Analytics",
+    "location": "Vancouver",
+    "department_size": 45,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "668e6e4c-c5ff-487b-aa11-c2d4a69f722a",
+    "company_department_name": "Data Analytics Team, James, Howe and Mcgee",
+    "dept_specialization": "Data Analytics",
+    "location": "Waterloo",
+    "department_size": 34,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "080e25a6-cc2c-4da4-8457-7b1523fd6664",
+    "company_department_name": "Data Analytics Team, Sun Life",
+    "dept_specialization": "Data Analytics",
+    "location": "Ottawa",
+    "department_size": 23,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "a80a29e2-055e-4585-8de6-d9fe0f51c8cb",
+    "company_department_name": "Data Analytics Team, Combs Ltd",
+    "dept_specialization": "Data Analytics",
+    "location": "Ottawa",
+    "department_size": 36,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "862f0a93-d616-4957-97db-0d7446099a30",
+    "company_department_name": "Data Analytics Team, CIBC",
+    "dept_specialization": "Data Analytics",
+    "location": "Waterloo",
+    "department_size": 38,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "10feabd1-fc3a-4969-8327-9396a9776670",
+    "company_department_name": "Data Analytics Team, Google",
+    "dept_specialization": "Data Analytics",
+    "location": "Ottawa",
+    "department_size": 36,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "7a2b9e53-fc28-4595-b822-df660f06d373",
+    "company_department_name": "Data Analytics Team, Sun Life",
+    "dept_specialization": "Data Analytics",
+    "location": "Montreal",
+    "department_size": 8,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "c4e1c5a8-af6f-433a-ab48-c607f111df6f",
+    "company_department_name": "Data Analytics Team, Gilbert-Glenn",
+    "dept_specialization": "Data Analytics",
+    "location": "Waterloo",
+    "department_size": 11,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "606f1564-33f6-460d-9aaf-f00c52a5005b",
+    "company_department_name": "Data Analytics Team, Canada Life",
+    "dept_specialization": "Data Analytics",
+    "location": "Montreal",
+    "department_size": 20,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "95dc34db-8db3-4888-a2c1-a24f960cdda2",
+    "company_department_name": "Data Analytics Team, Scotiabank",
+    "dept_specialization": "Data Analytics",
+    "location": "Vancouver",
+    "department_size": 14,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "d38a87cb-0a33-4f2f-bdf9-ab8410149c30",
+    "company_department_name": "Data Analytics Team, Canada Life",
+    "dept_specialization": "Data Analytics",
+    "location": "Montreal",
+    "department_size": 50,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "f50fa195-37e9-4351-bbf0-0c6c4ee2af37",
+    "company_department_name": "Data Analytics Team, Smith, Schmidt and Silva",
+    "dept_specialization": "Data Analytics",
+    "location": "Vancouver",
+    "department_size": 48,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "662450ec-66dd-41ba-80bd-6e97c3c7e101",
+    "company_department_name": "Data Analytics Team, Rivera-Gonzalez",
+    "dept_specialization": "Data Analytics",
+    "location": "Montreal",
+    "department_size": 47,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "f992018f-d73b-4121-897e-909bc42504dc",
+    "company_department_name": "Data Analytics Team, RBC",
+    "dept_specialization": "Data Analytics",
+    "location": "Waterloo",
+    "department_size": 8,
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Architect",
+      "Database Administrator"
+    ]
+  },
+  {
+    "id": "1d69ccb0-9555-4e24-8ba8-865f4428539f",
+    "company_department_name": "DevOps Team, TD",
+    "dept_specialization": "DevOps",
+    "location": "Montreal",
+    "department_size": 20,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "22552d9e-9b07-42a9-bbea-a27dab427b75",
+    "company_department_name": "DevOps Team, Manulife",
+    "dept_specialization": "DevOps",
+    "location": "Waterloo",
+    "department_size": 44,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "754c7f8b-ed58-4191-8047-dd821fb4efd2",
+    "company_department_name": "DevOps Team, Davis Ltd",
+    "dept_specialization": "DevOps",
+    "location": "Montreal",
+    "department_size": 39,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "d73208dd-53fe-4f46-84a3-bc4560a42d31",
+    "company_department_name": "DevOps Team, BMO",
+    "dept_specialization": "DevOps",
+    "location": "Montreal",
+    "department_size": 15,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "3120aa1e-2db2-49ae-a421-45c3219b3d57",
+    "company_department_name": "DevOps Team, Lutz Group",
+    "dept_specialization": "DevOps",
+    "location": "Vancouver",
+    "department_size": 16,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "01e78898-5e85-4fbd-95ce-a420889dcf71",
+    "company_department_name": "DevOps Team, Gibson, Sharp and Beck",
+    "dept_specialization": "DevOps",
+    "location": "Waterloo",
+    "department_size": 8,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "f492e9fb-284b-4e4e-aba2-f466a80491d2",
+    "company_department_name": "DevOps Team, Manulife",
+    "dept_specialization": "DevOps",
+    "location": "Vancouver",
+    "department_size": 8,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "28eb46c7-1118-4c2e-bcc0-3daf817091b7",
+    "company_department_name": "DevOps Team, CIBC",
+    "dept_specialization": "DevOps",
+    "location": "Toronto",
+    "department_size": 11,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "b0f5945b-c030-4692-befa-32809ae5735b",
+    "company_department_name": "DevOps Team, Tucker-Baird",
+    "dept_specialization": "DevOps",
+    "location": "Toronto",
+    "department_size": 39,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "67e07da2-40c1-4996-ab0c-0d0854966bf9",
+    "company_department_name": "DevOps Team, Amazon",
+    "dept_specialization": "DevOps",
+    "location": "Vancouver",
+    "department_size": 25,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "daecdab8-9a55-4703-9e1a-43aae194a97a",
+    "company_department_name": "DevOps Team, Microsoft",
+    "dept_specialization": "DevOps",
+    "location": "Ottawa",
+    "department_size": 39,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "bce92701-8fa9-4c9a-9906-700093b70b17",
+    "company_department_name": "DevOps Team, TD",
+    "dept_specialization": "DevOps",
+    "location": "Montreal",
+    "department_size": 15,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "0020b16d-7539-4ad0-8d14-00a6e1cef72e",
+    "company_department_name": "DevOps Team, RBC",
+    "dept_specialization": "DevOps",
+    "location": "Toronto",
+    "department_size": 30,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "38805464-b839-43d5-8d72-9af42d75dde8",
+    "company_department_name": "DevOps Team, Smith-Duarte",
+    "dept_specialization": "DevOps",
+    "location": "Montreal",
+    "department_size": 48,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "251d1c92-9c35-4dc8-8864-ce2fd9f3f35e",
+    "company_department_name": "DevOps Team, BMO",
+    "dept_specialization": "DevOps",
+    "location": "Toronto",
+    "department_size": 12,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "93965085-8f7e-4f53-8ca6-be369b562ddd",
+    "company_department_name": "Cloud Infrastructure Team, Williams-Montgomery",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Waterloo",
+    "department_size": 14,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "6c86a788-9f09-4f7b-a0af-11f98579ff2f",
+    "company_department_name": "Cloud Infrastructure Team, Manulife",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Montreal",
+    "department_size": 34,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "aeb33d19-746f-48d8-ba0e-800afe468976",
+    "company_department_name": "Cloud Infrastructure Team, Amazon",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Ottawa",
+    "department_size": 5,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "17501005-5e2a-4eec-953d-ffca529278fe",
+    "company_department_name": "Cloud Infrastructure Team, Greer, Martinez and Smith",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Toronto",
+    "department_size": 45,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "05a087ad-4133-4b25-8397-7fa0443ead62",
+    "company_department_name": "Cloud Infrastructure Team, Buchanan, Cooley and Jones",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Waterloo",
+    "department_size": 46,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "bb92e774-d7c8-4d07-8af0-ecc7ed1ae213",
+    "company_department_name": "Cloud Infrastructure Team, Aguirre, Burgess and Torres",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Waterloo",
+    "department_size": 33,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "e7b6cdfa-0afe-464a-80e9-a4fb17d0f4f7",
+    "company_department_name": "Cloud Infrastructure Team, Microsoft",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Ottawa",
+    "department_size": 44,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "0809d3ef-94dd-4a8c-8b65-33ff41a35f4f",
+    "company_department_name": "Cloud Infrastructure Team, Cox, Jenkins and Martinez",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Toronto",
+    "department_size": 40,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "c137c0da-7a10-4431-ad8c-5708a78afde6",
+    "company_department_name": "Cloud Infrastructure Team, Canada Life",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Toronto",
+    "department_size": 49,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "e595e741-14e0-4679-a5a8-13d7e0346bc7",
+    "company_department_name": "Cloud Infrastructure Team, Rogers, Bennett and Farley",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Toronto",
+    "department_size": 37,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "03ffaf47-79fd-4982-b189-2df2ceda4b9c",
+    "company_department_name": "Cloud Infrastructure Team, Amazon",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Vancouver",
+    "department_size": 21,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "654cf2ea-3c22-45e7-8f7c-b391c3022243",
+    "company_department_name": "Cloud Infrastructure Team, Scotiabank",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Waterloo",
+    "department_size": 19,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "4fd757c9-fbd2-4ee2-b56e-9ad671689ce0",
+    "company_department_name": "Cloud Infrastructure Team, Manulife",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Ottawa",
+    "department_size": 6,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "f9de0edc-b676-488a-b72e-f5cceeb7f7e4",
+    "company_department_name": "Cloud Infrastructure Team, Amazon",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Montreal",
+    "department_size": 28,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "619cbe61-f781-44d3-85e7-7ee633b06f92",
+    "company_department_name": "Cloud Infrastructure Team, Black-Allen",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Vancouver",
+    "department_size": 19,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "da7e12b2-3db8-45bb-9ec1-bccf1838be3c",
+    "company_department_name": "AI Research Team, Sun Life",
+    "dept_specialization": "AI Research",
+    "location": "Toronto",
+    "department_size": 50,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "f4ef2dac-e60e-43f0-94fb-2c9ebfdad5a5",
+    "company_department_name": "AI Research Team, Anderson Group",
+    "dept_specialization": "AI Research",
+    "location": "Waterloo",
+    "department_size": 38,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "3f1dd5cf-3a24-460c-b4a7-b4393d5f3227",
+    "company_department_name": "AI Research Team, Amazon",
+    "dept_specialization": "AI Research",
+    "location": "Vancouver",
+    "department_size": 11,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "35bcb792-9ebc-4647-940f-648f9d3e9690",
+    "company_department_name": "AI Research Team, RBC",
+    "dept_specialization": "AI Research",
+    "location": "Ottawa",
+    "department_size": 6,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "90437a66-22e7-409c-85f5-5241fe81b649",
+    "company_department_name": "AI Research Team, RBC",
+    "dept_specialization": "AI Research",
+    "location": "Vancouver",
+    "department_size": 19,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "e365f6d9-cf7d-43b1-ae91-4f49291168e2",
+    "company_department_name": "AI Research Team, Jackson PLC",
+    "dept_specialization": "AI Research",
+    "location": "Toronto",
+    "department_size": 29,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "5f858fc1-2adb-4b21-85c2-19a6a95b7166",
+    "company_department_name": "AI Research Team, Manulife",
+    "dept_specialization": "AI Research",
+    "location": "Waterloo",
+    "department_size": 41,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "4775384b-63a4-428c-b0ee-ddf288cdadd8",
+    "company_department_name": "AI Research Team, Brown, Flores and Simmons",
+    "dept_specialization": "AI Research",
+    "location": "Vancouver",
+    "department_size": 20,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "2a5f85fb-98cc-4017-ae9d-9871bb790d5d",
+    "company_department_name": "AI Research Team, RBC",
+    "dept_specialization": "AI Research",
+    "location": "Ottawa",
+    "department_size": 45,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "0b345e74-4ed0-4a4c-b89f-0820c3dca8d9",
+    "company_department_name": "AI Research Team, RBC",
+    "dept_specialization": "AI Research",
+    "location": "Waterloo",
+    "department_size": 38,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "cc011558-75f3-4e30-ae5c-4a83a28c6f2b",
+    "company_department_name": "AI Research Team, RBC",
+    "dept_specialization": "AI Research",
+    "location": "Waterloo",
+    "department_size": 48,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "01a8d1d9-bb5f-4f83-8081-18ac01ed448e",
+    "company_department_name": "AI Research Team, RBC",
+    "dept_specialization": "AI Research",
+    "location": "Montreal",
+    "department_size": 40,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "58be205c-ed8b-40d4-97f3-e26c630fdfac",
+    "company_department_name": "AI Research Team, Wilson-Berger",
+    "dept_specialization": "AI Research",
+    "location": "Ottawa",
+    "department_size": 47,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "c0e5d159-5a1b-4531-89b6-3263d643ba35",
+    "company_department_name": "AI Research Team, Joseph-Ortiz",
+    "dept_specialization": "AI Research",
+    "location": "Toronto",
+    "department_size": 17,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "9a8d83b2-84fc-4f75-9260-7d53ea631633",
+    "company_department_name": "AI Research Team, Microsoft",
+    "dept_specialization": "AI Research",
+    "location": "Toronto",
+    "department_size": 14,
+    "roles": [
+      "AI Research Scientist",
+      "Machine Learning Researcher",
+      "Deep Learning Researcher",
+      "NLP Researcher"
+    ]
+  },
+  {
+    "id": "08f1b27f-0806-46f1-8178-57fa265b3ad1",
+    "company_department_name": "Financial Analysis Team, Peters, Roberts and Davis",
+    "dept_specialization": "Financial Analysis",
+    "location": "Waterloo",
+    "department_size": 46,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "c8f8b0c0-7e05-4ed3-ae54-c1539de4c387",
+    "company_department_name": "Financial Analysis Team, Lewis PLC",
+    "dept_specialization": "Financial Analysis",
+    "location": "Ottawa",
+    "department_size": 8,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "ae568900-2f04-4ea8-b22b-6cbe398326b7",
+    "company_department_name": "Financial Analysis Team, Alexander, Brown and Bartlett",
+    "dept_specialization": "Financial Analysis",
+    "location": "Waterloo",
+    "department_size": 27,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "1ba0bfa1-e211-4ec6-954e-d37320c8384d",
+    "company_department_name": "Financial Analysis Team, Hodges, Anderson and Shaffer",
+    "dept_specialization": "Financial Analysis",
+    "location": "Vancouver",
+    "department_size": 31,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "54dc0bec-be08-487f-bae6-a70ebc11aa36",
+    "company_department_name": "Financial Analysis Team, Amazon",
+    "dept_specialization": "Financial Analysis",
+    "location": "Toronto",
+    "department_size": 10,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "79a3d596-f908-427c-b50c-3fd77a259453",
+    "company_department_name": "Financial Analysis Team, Sun Life",
+    "dept_specialization": "Financial Analysis",
+    "location": "Ottawa",
+    "department_size": 23,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "51aee003-529e-4e33-b9a4-7f3e9efe6795",
+    "company_department_name": "Financial Analysis Team, Smith Inc",
+    "dept_specialization": "Financial Analysis",
+    "location": "Ottawa",
+    "department_size": 16,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "719bd8ac-7d07-446c-b870-ec93b8036e4f",
+    "company_department_name": "Financial Analysis Team, Diaz Inc",
+    "dept_specialization": "Financial Analysis",
+    "location": "Waterloo",
+    "department_size": 14,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "9d614bfe-3fc0-425c-a0f7-af7bd48a570a",
+    "company_department_name": "Financial Analysis Team, Tran LLC",
+    "dept_specialization": "Financial Analysis",
+    "location": "Vancouver",
+    "department_size": 39,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "907652ea-c866-4265-ad10-915697b0a268",
+    "company_department_name": "Financial Analysis Team, Sun Life",
+    "dept_specialization": "Financial Analysis",
+    "location": "Waterloo",
+    "department_size": 24,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "459d4dfe-6a4f-435a-8539-084947e4425d",
+    "company_department_name": "Financial Analysis Team, Canada Life",
+    "dept_specialization": "Financial Analysis",
+    "location": "Vancouver",
+    "department_size": 37,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "12b78c1c-b40c-44d1-8f2d-724e4882918d",
+    "company_department_name": "Financial Analysis Team, RBC",
+    "dept_specialization": "Financial Analysis",
+    "location": "Montreal",
+    "department_size": 13,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "ccc66fff-9e21-48a0-b1a2-ebe789a900c6",
+    "company_department_name": "Financial Analysis Team, Smith, Sullivan and Alvarez",
+    "dept_specialization": "Financial Analysis",
+    "location": "Toronto",
+    "department_size": 5,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "8d359c76-0112-444e-a3da-e72bc5c700c8",
+    "company_department_name": "Financial Analysis Team, TD",
+    "dept_specialization": "Financial Analysis",
+    "location": "Ottawa",
+    "department_size": 35,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "2308d563-2e71-468b-8cf0-1baf14604fce",
+    "company_department_name": "Financial Analysis Team, CIBC",
+    "dept_specialization": "Financial Analysis",
+    "location": "Vancouver",
+    "department_size": 20,
+    "roles": [
+      "Financial Analyst",
+      "Investment Analyst",
+      "Portfolio Manager",
+      "Budget Analyst"
+    ]
+  },
+  {
+    "id": "8e51f70c-a603-430d-865b-20d9849b4e93",
+    "company_department_name": "Data Science Team, Canada Life",
+    "dept_specialization": "Data Science",
+    "location": "Ottawa",
+    "department_size": 15,
+    "roles": [
+      "Data Scientist",
+      "Machine Learning Engineer",
+      "Data Analyst",
+      "AI Research Scientist"
+    ]
+  },
+  {
+    "id": "fa99093a-e92f-4343-9b46-d13eaf978dfe",
+    "company_department_name": "Cloud Infrastructure Team, Frank Ltd",
+    "dept_specialization": "Cloud Infrastructure",
+    "location": "Ottawa",
+    "department_size": 11,
+    "roles": [
+      "Cloud Architect",
+      "Cloud Engineer",
+      "Cloud Security Engineer",
+      "Network Engineer"
+    ]
+  },
+  {
+    "id": "ab927a16-7310-4bfb-b528-1612b82fc569",
+    "company_department_name": "Data Science Team, King and Sons",
+    "dept_specialization": "Data Science",
+    "location": "Ottawa",
     "department_size": 32,
     "roles": [
       "Data Scientist",
@@ -637,11 +1599,24 @@
     ]
   },
   {
-    "id": "dda2f22b-b3ec-448d-b269-be393e4b826f",
-    "company_department_name": "Software Engineering Team, Amazon",
+    "id": "7be9fa0f-c86d-440e-a76d-526b4b6c89e4",
+    "company_department_name": "DevOps Team, Blackwell and Sons",
+    "dept_specialization": "DevOps",
+    "location": "Montreal",
+    "department_size": 16,
+    "roles": [
+      "DevOps Engineer",
+      "Site Reliability Engineer",
+      "Cloud Engineer",
+      "Build and Release Engineer"
+    ]
+  },
+  {
+    "id": "9865d28c-17bb-45c2-aa01-4f25fbd812f6",
+    "company_department_name": "Software Engineering Team, Wilson, Hill and Gonzalez",
     "dept_specialization": "Software Engineering",
-    "location": "Waterloo",
-    "department_size": 5,
+    "location": "Toronto",
+    "department_size": 44,
     "roles": [
       "Software Engineer",
       "Full Stack Developer",

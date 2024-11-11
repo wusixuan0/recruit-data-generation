@@ -19,24 +19,24 @@ CONFIG = {
       "dept_specialization": "Software Engineering"
     },
   },
-  "role_categories": ["Data Science", "Software Engineering", "Business Analytics"],
+  "role_categories": ["Data Science", "Software Engineering", "Business Analytics", "Data Analytics", "DevOps", "Cloud Infrastructure", "AI Research", "Financial Analysis"],
           
   # Monthly generation parameters
   "new_jobs_per_month": {
-      "Business Analytics": 15,
-      "Data Science": 15,
+      "Business Analytics": 25,
+      "Data Science": 25,
       "Software Engineering": 40,
-      "Data Analytics": 15, 
-      "DevOps": 1, 
-      "Cloud Infrastructure": 1, 
-      "AI Research":1,
+      "Data Analytics": 25, 
+      "DevOps": 2, 
+      "Cloud Infrastructure": 2, 
+      "AI Research": 5,
       "Financial Analysis": 10,
   },
   "new_candidates_per_month": {
-      "Business Analytics": 15,
+      "Business Analytics": 20,
       "Data Science": 15,
       "Software Engineering": 30,
-      "Data Analytics": 15, 
+      "Data Analytics": 20, 
       "DevOps": 1, 
       "Cloud Infrastructure": 1, 
       "AI Research": 1,
