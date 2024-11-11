@@ -1,5 +1,6 @@
 import random
 from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 from faker import Faker
 from typing import Dict, List, Any
 from config.config import CONFIG
@@ -31,6 +32,7 @@ class RecruitingSimulator:
         self.next_apply_id = 0
     
     def generate_dataset(self, number_of_months: int) -> Dict[str, List[Dict[str, Any]]]:
+        self._set_start_date(number_of_months)
         """Generate complete recruiting dataset over specified months"""
         # 1. Initial Setup
         self._generate_initial_candidates()
@@ -52,6 +54,9 @@ class RecruitingSimulator:
             'apply_history': self.apply_history
         }
     
+    def _set_start_date(self, number_of_months: int):
+        self.current_date = self.current_date - relativedelta(months=number_of_months)
+    
     def _generate_departments_for_categories(self):
         for category in self.job_categories:
             self.departments.extend(CompanyDataGenerator().generate_dept_for_category(category, 15))
@@ -63,7 +68,11 @@ class RecruitingSimulator:
     def _generate_initial_jobs(self):
         """Generate initial job openings"""
         for department in self.departments:
-            jobs = JobDataGenerator().generate_jobs_for_dept(department, 1)
+            jobs = JobDataGenerator().generate_jobs_for_dept(
+                department=department,
+                count=1,
+                posting_date=self.current_date.isoformat(),
+            )
             self.jobs.extend(jobs)
 
     def _generate_initial_candidates(self):
@@ -73,7 +82,7 @@ class RecruitingSimulator:
     
     def _generate_candidates_for_category(self, category: str, count: int):
         """Generate specified number of candidates for a category"""
-        self.candidates.extend(CandidateGenerator().generate_candidates_for_category(category, count))
+        self.candidates.extend(CandidateGenerator().generate_candidates_for_category(category, count, self.current_date.isoformat()))
     
     def _simulate_month(self):
         """Simulate one month of recruiting activities"""
@@ -91,7 +100,7 @@ class RecruitingSimulator:
                 category=category,
                 departments=self.departments,
                 count=job_count,
-                current_date=self.current_date
+                posting_date=self.current_date.isoformat(),
             )
 
             self.jobs.extend(new_jobs)
