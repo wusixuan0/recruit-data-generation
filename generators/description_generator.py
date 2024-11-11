@@ -1,94 +1,18 @@
 import random
 from faker import Faker
 from config.config import CONFIG
+from config.description_config import DESCRIPTION_CONFIG
 from utils.get_skills_for_role import get_skills_for_role
 
 fake = Faker()
 
 class DescriptionGenerator:
     def __init__(self):
-        # Template components for job descriptions
-        self.intro_templates = [
-            "Join {company_name}'s {department} team as a {job_title}.",
-            "We are seeking an experienced {job_title} to join our growing {department} team.",
-            "{company_name} is looking for a talented {job_title} to drive innovation in our {department} division.",
-            "Exciting opportunity for a {job_title} to make an impact in our {department} organization."
-        ]
-        
-        self.responsibility_templates = {
-            "Data Science": [
-                "Build and optimize machine learning models to {action} {target}",
-                "Analyze complex datasets to {action} {target}",
-                "Collaborate with stakeholders to {action} {target}",
-                "Develop and maintain data pipelines for {target}",
-                "Create and deploy ML models for {target}",
-                "Conduct statistical analysis to {action} {target}"
-            ],
-            "Software Engineering": [
-                "Design and implement scalable solutions for {target}",
-                "Write clean, maintainable code for {target}",
-                "Debug and optimize {target}",
-                "Collaborate with cross-functional teams on {target}",
-                "Develop and maintain RESTful APIs for {target}",
-                "Implement automated testing frameworks for {target}"
-            ]
-        }
-        
-        self.target_phrases = {
-            "Data Science": [
-                "business intelligence dashboards",
-                "customer segmentation models",
-                "prediction algorithms",
-                "data warehousing solutions",
-                "automated reporting systems",
-                "real-time analytics platforms"
-            ],
-            "Software Engineering": [
-                "high-traffic web applications",
-                "distributed systems",
-                "cloud infrastructure",
-                "microservices architecture",
-                "backend services",
-                "user-facing features"
-            ]
-        }
-        
-        self.action_phrases = {
-            "Data Science": [
-                "derive insights from",
-                "improve efficiency of",
-                "automate analysis of",
-                "optimize performance of",
-                "enhance accuracy of",
-                "streamline processing of"
-            ],
-            "Software Engineering": [
-                "enhance scalability of",
-                "improve reliability of",
-                "optimize performance of",
-                "maintain and upgrade",
-                "implement new features for",
-                "modernize and refactor"
-            ]
-        }
-
-        # Template components for work experience
-        self.experience_templates = {
-            "Data Science": [
-                "Led {team_size} person team in developing {target}",
-                "Implemented machine learning solutions that {action} {target}",
-                "Collaborated with stakeholders to {action} {target}",
-                "Spearheaded development of {target}",
-                "Achieved {metric}% improvement in {target}"
-            ],
-            "Software Engineering": [
-                "Developed and maintained {target}",
-                "Architected and implemented {target}",
-                "Led technical initiatives to {action} {target}",
-                "Reduced {metric}% in system latency for {target}",
-                "Mentored junior developers while working on {target}"
-            ]
-        }
+        self.intro_templates = DESCRIPTION_CONFIG["intro_templates"]
+        self.responsibility_templates = DESCRIPTION_CONFIG["responsibility_templates"]
+        self.target_phrases = DESCRIPTION_CONFIG["target_phrases"]
+        self.action_phrases = DESCRIPTION_CONFIG["action_phrases"]
+        self.experience_templates = DESCRIPTION_CONFIG["experience_templates"]
 
         self.metrics = [str(x) for x in range(10, 96, 5)]  # Generate metrics like 10%, 15%, etc.
         self.team_sizes = ["2", "3", "4", "5", "6", "8", "10"]
